@@ -1,32 +1,25 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fdfdfd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(7, 7, 7);
+  background-image: url("https://c.wallhere.com/photos/a9/19/2800x1400_px_black_holes_cgi_digital_art_Gravitational_Lens_space_stars-655199.jpg!dS");
 }
 
 .App-link {
-  color: #61dafb;
+  color: #30bb52;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
