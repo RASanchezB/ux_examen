@@ -1,0 +1,12 @@
+{
+    "citas":[
+        {
+            "Nombre":"Prueba",
+            "ID":"Prueba2",
+            "Residencia": "Prueba3",
+            "Telefono":"Prueba4",
+            "Propiedad":"Prueba5",
+            "Oficina":"Prueba6"
+        }
+    ]
+}

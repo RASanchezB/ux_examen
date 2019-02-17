@@ -81,6 +81,9 @@ class CitaForm extends Component{
                             <option>El Centro</option>
                             <option>Bulevar Morazan</option>
                         </select>
+                        <button>
+                            Organizar
+                        </button>
                     </div>
                 </form>
             </div>

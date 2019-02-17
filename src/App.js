@@ -5,6 +5,7 @@ import './App.css';
 import {edificios} from './edificios.json';
 import Navigation from './components/Navigation.js';
 import CitaForm from './components/CitaForm.js';
+import Citas from './citas.json';
 //import para botones
 import { Button } from 'reactstrap';
 //imports para el nav bar
@@ -14,10 +15,15 @@ class App extends Component {
   /*Para bienes raices*/
   constructor(){
     super();
-      this.state = {
-        edificios
-      } 
+    this.state = {
+      edificios
+    } 
       //this.myFunction = this.myFunction.bind(this);
+  }
+  hanldeAddCitas(cita){
+    this.state({
+      citas:[...this.Citas.citas, cita]
+    })
   }
 
   render() {
@@ -53,7 +59,7 @@ class App extends Component {
             {edificios}
           </div>
         </div>
-        <CitaForm></CitaForm>
+        <CitaForm onAddCita={this.hanldeAddCitas}></CitaForm>
       </div>
     );
   }
