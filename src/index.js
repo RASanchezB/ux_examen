@@ -9,5 +9,5 @@ import * as serviceWorker from './serviceWorker';
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 //Necesidades
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 serviceWorker.unregister();

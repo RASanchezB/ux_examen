@@ -18,19 +18,22 @@ class App extends Component {
     this.state = {
       edificios
     } 
-      //this.myFunction = this.myFunction.bind(this);
+      this.hanldeAddCitas = this.hanldeAddCitas.bind(this);
+      
   }
   hanldeAddCitas(cita){
-    this.state({
-      citas:[...this.Citas.citas, cita]
+    this.setState({
+      citas:[...Citas.citas, cita]
     })
+  }
+  myFunction(){
+    alert('Probando')
   }
 
   render() {
-
     const edificios = this.state.edificios.map((edificios, i) => {
       return(
-        <div className = "col-md-4">
+        <div className = "col-md-4" key={i}>
           <div className = "card mt-4">
             <div className = "card-header">
               <h4>{edificios.Nombre}</h4>
@@ -41,7 +44,9 @@ class App extends Component {
               <p>Precio: {edificios.Precio}</p>
             </div>
             <div className = "card-footer">
-              <button onclick = {"myFunction"}>Organizar cita</button>
+              <button
+                className="btn btn-danger" 
+                onClick = {this.myFunction.bind(this)}>Organizar cita</button>
             </div>
           </div>
         </div>

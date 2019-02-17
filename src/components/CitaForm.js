@@ -25,7 +25,7 @@ class CitaForm extends Component{
     handleSubmit(e){
         alert('Organizando...')
         e.preventDefault();
-
+        this.props.onAddCita(this.state);
     }
     
     render(){
