@@ -1,10 +1,10 @@
 //dependencias
 import React, { Component } from 'react';
 import './App.css';
-//imports
+//imports de otras cosas para render
 import {edificios} from './edificios.json';
 import Navigation from './components/Navigation.js';
-
+import CitaForm from './components/CitaForm.js';
 //import para botones
 import { Button } from 'reactstrap';
 //imports para el nav bar
@@ -17,10 +17,8 @@ class App extends Component {
       this.state = {
         edificios
       } 
-      
+      //this.myFunction = this.myFunction.bind(this);
   }
-  
-
 
   render() {
 
@@ -37,7 +35,7 @@ class App extends Component {
               <p>Precio: {edificios.Precio}</p>
             </div>
             <div className = "card-footer">
-              <button onclick = "myFunction()">Organizar cita</button>
+              <button onclick = {"myFunction"}>Organizar cita</button>
             </div>
           </div>
         </div>
@@ -47,6 +45,7 @@ class App extends Component {
     return (
       <div className = "App">
         <Navigation></Navigation>
+        
         <h1>Home</h1>
         <h3>Grandes edificios para grandes empresarios</h3>
         <div className = "conteiner">
@@ -54,6 +53,7 @@ class App extends Component {
             {edificios}
           </div>
         </div>
+        <CitaForm></CitaForm>
       </div>
     );
   }

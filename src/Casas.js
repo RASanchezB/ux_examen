@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './Casas.css';
 //imports
-import {casas} from './Casas.json';
+import {casas} from './casas.json';
 import Navigation from './components/Navigation.js';
 
 //import para botones
@@ -47,7 +47,8 @@ class Casas extends Component {
     return (
       <div className = "Casa">
         <Navigation></Navigation>
-          <h1>Casas disponible para comprar</h1>
+          <h1>Casas</h1>
+          <h3>No hay mejor lugar que el hogar</h3>
         <div className = "conteiner">
           <div className = "row mt-4">
             {casas}

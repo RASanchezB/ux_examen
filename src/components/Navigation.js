@@ -6,14 +6,16 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
 } from "reactstrap";
 //imports para moverse 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Switch, Route, Redirect} from 'react-router-dom';
+import {
+  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+  } from "mdbreact";
+  import Casas from '../Casas';
+
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -42,8 +44,9 @@ class Navigation extends React.Component {
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
+              
               <NavItem>
-                <NavLink href="../Casas/">Casas</NavLink>
+                <NavLink href="../Casas">Casas</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/RASanchezB">GitHub</NavLink>
