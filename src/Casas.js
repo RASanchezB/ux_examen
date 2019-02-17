@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './Casas.css';
 //imports
-import {casas} from './casas.json';
+import {casas} from './Casas.json';
 import Navigation from './components/Navigation.js';
 
 //import para botones
@@ -10,7 +10,7 @@ import { Button } from 'reactstrap';
 //imports para el nav bar
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-class casas extends Component {
+class Casas extends Component {
   /*Para bienes raices*/
   constructor(){
     super();
@@ -45,20 +45,16 @@ class casas extends Component {
     })
     /*min 45:19 del tutorial */
     return (
-      <div className = "App">
+      <div className = "Casa">
         <Navigation></Navigation>
-
+          <h1>Casas disponible para comprar</h1>
         <div className = "conteiner">
           <div className = "row mt-4">
             {casas}
           </div>
         </div>
       </div>
-    );
-    
-  }
-  
+    ); 
+  } 
 }
-
-
-export default casas;
+export default Casas;

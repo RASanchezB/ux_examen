@@ -47,7 +47,8 @@ class App extends Component {
     return (
       <div className = "App">
         <Navigation></Navigation>
-
+        <h1>Home</h1>
+        <h3>Grandes edificios para grandes empresarios</h3>
         <div className = "conteiner">
           <div className = "row mt-4">
             {edificios}
@@ -55,10 +56,6 @@ class App extends Component {
         </div>
       </div>
     );
-    
   }
-  
 }
-
-
 export default App;
