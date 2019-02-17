@@ -1,38 +1,64 @@
+//dependencias
 import React, { Component } from 'react';
-import logo from './Yo.jpg';
 import './App.css';
+//imports
+import {edificios} from './edificios.json';
+import Navigation from './components/Navigation.js';
+
+//import para botones
+import { Button } from 'reactstrap';
+//imports para el nav bar
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 class App extends Component {
+  /*Para bienes raices*/
+  constructor(){
+    super();
+      this.state = {
+        edificios
+      } 
+      
+  }
+  
+
+
   render() {
+
+    const edificios = this.state.edificios.map((edificios, i) => {
+      return(
+        <div className = "col-md-4">
+          <div className = "card mt-4">
+            <div className = "card-header">
+              <h4>{edificios.Nombre}</h4>
+            </div>
+            <div className = "card-body">
+              <img src= {edificios.Imagen}  alt = "imagen"></img>
+              <p>Ubicacion: {edificios.Ubicacion}</p>
+              <p>Precio: {edificios.Precio}</p>
+            </div>
+            <div className = "card-footer">
+              <button onclick = "myFunction()">Organizar cita</button>
+            </div>
+          </div>
+        </div>
+      );
+    })
+    /*min 45:19 del tutorial */
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="Yo" />
-          <h3>Ricardo Sanchez</h3>
-          <h6>Numero de cuenta: 11641051</h6>
-          <h6>Profesion: Estudiante de ingenieria en sistemas computacionales</h6>
-          <h6>Instituto: UNITEC</h6>
-          <h6>Nacimiento: 3 de Agosto de 1998</h6>
-          <h6>Telefono: 89725037</h6>
-          <h6>Correo: Rasanchez@unitec.edu</h6>
-          <h4>Informacion general</h4>
-          <p>
-          Soy un estudiante de Unitec con la esperanza de pasar sus clases con un buen promedio y lograr estudiar su maerstria en el extrangero. Conocido como leyenda entre ciertos miembors de las carreras de ingenieria por su gran suerte al final de cada periodo. Sus proesas fueron llamadas "La Sanchez" por su gran capacidad al reproducir estos milagros. Muchos imitan sus acciones al lograr recrear el milagro de "La Sanchez" 
-          </p>
-          <h4>Perfil y Aspiraciones</h4>
-          <p>Me gusta trabajar, soy una persona puntual, responsable, amigable y respetuosa. Tengo de objetivo terminar mis estudios universitarios y trabajar para obtener una vida satisfactoria y honrada.</p>
-          <a
-            className="App-link"
-            href="https://www.facebook.com/ricardo.sanchez.90260403?ref=bookmarks"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mi Facebook
-          </a>
-        </header>
+      <div className = "App">
+        <Navigation></Navigation>
+
+        <div className = "conteiner">
+          <div className = "row mt-4">
+            {edificios}
+          </div>
+        </div>
       </div>
     );
+    
   }
+  
 }
+
 
 export default App;
