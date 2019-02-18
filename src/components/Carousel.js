@@ -20,7 +20,7 @@ const CarouselPage = () => {
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
             <MDBView>
-              <img className="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDEDdOde0vgl9vkjG--eHLOuoU2VDyEwVYCdHyqXzBPphzdY3" alt="Edificios" />
+              <img className="d-block w-100" src="https://i.ytimg.com/vi/_W-wYevNRbc/maxresdefault.jpg" alt="Edificios" />
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
@@ -30,7 +30,7 @@ const CarouselPage = () => {
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
             <MDBView>
-              <img className="d-block w-100" src="https://st4.depositphotos.com/5647624/20283/i/1600/depositphotos_202832614-stock-photo-big-modern-skyscraper-office-building.jpg" alt="Oficinas" />
+              <img className="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/HSBC_Bank_Tegucigalpa.jpg" alt="Oficinas" />
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
@@ -40,7 +40,7 @@ const CarouselPage = () => {
           </MDBCarouselItem>
           <MDBCarouselItem itemId="4">
             <MDBView>
-              <img className="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKewl7suY2NgCk53qtWl2JqnUWV8kO7cDy2ckObDTYi-cGUyd" alt="Servicio" />
+              <img className="d-block w-100" src="https://elcapitalfinanciero.com/wp-content/uploads/2014/11/clientes-banco-1024x745.jpg" alt="Servicio" />
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
