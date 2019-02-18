@@ -7,9 +7,9 @@ import Navigation from './components/Navigation.js';
 import CitaForm from './components/CitaForm.js';
 import Citas from './citas.json';
 //import para botones
-import { Button } from 'reactstrap';
+//import { Button } from 'reactstrap';
 //imports para el nav bar
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+//import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import Home from './components/Home';
 import { BrowserRouter, Route, Redirect} from 'react-router-dom';
 

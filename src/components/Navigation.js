@@ -9,13 +9,7 @@ import {
     NavLink
 } from "reactstrap";
 //imports para moverse 
-import { BrowserRouter, Route, Redirect} from 'react-router-dom';
-import {
-  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
-  } from "mdbreact";
-  import Casas from '../Casas';
-  import Home from './Home';
+
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -39,7 +33,7 @@ class Navigation extends React.Component {
       <div>
         <Navbar color="faded" light>
           <NavbarBrand href="/" className="mr-auto">Bienes Raices Sanchez</NavbarBrand>
-            <img alt="Logo" style={{ height: "fill", width: 100, height: 100 }} src={require("./logo.png")} />
+            <img alt="Logo" style={{ width: 100, height: 100 }} src={require("./logo.png")} />
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>

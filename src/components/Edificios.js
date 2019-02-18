@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import './App.css';
 //imports de otras cosas para render
-import {edificios} from './edificios.json';
-import Navigation from './components/Navigation.js';
-import CitaForm from './components/CitaForm.js';
-import Citas from './citas.json';
+import {edificios} from '../edificios.json';
+import Navigation from './Navigation.js';
+import CitaForm from './CitaForm.js';
+import Citas from '../citas.json';
 
 class Edificios extends Component {
     /*Para bienes raices*/
@@ -62,7 +62,6 @@ class Edificios extends Component {
             </div>
           </div>
           <CitaForm onAddCita={this.hanldeAddCitas}></CitaForm>
-          
         </div>
       );
     }
