@@ -58,7 +58,7 @@ class App extends Component {
       <div className = "App">
         <Navigation></Navigation>
         
-        <h1>Home</h1>
+        <h1>Proyectos Grandes</h1>
         <h3>Grandes edificios para grandes empresarios</h3>
         <div className = "conteiner">
           <div className = "row mt-4">

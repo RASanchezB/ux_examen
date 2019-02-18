@@ -23,7 +23,7 @@ class CitaForm extends Component{
         })
     }
     handleSubmit(e){
-        alert('Organizando...')
+        alert('Organizando... Porfavor espere a que uno de nuestros consultores lo contacte')
         e.preventDefault();
         this.props.onAddCita(this.state);
     }
