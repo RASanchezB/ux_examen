@@ -10,6 +10,16 @@ import Citas from './citas.json';
 import { Button } from 'reactstrap';
 //imports para el nav bar
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import Home from './components/Home';
+import { BrowserRouter, Route, Redirect} from 'react-router-dom';
+
+const NewRoute = () =>{
+  return(
+    <div>
+      <Home></Home>
+    </div>
+  );
+}
 
 class App extends Component {
   /*Para bienes raices*/
@@ -51,13 +61,17 @@ class App extends Component {
             </div>
           </div>
         </div>
+        
       );
     })
     /*min 45:19 del tutorial */
     return (
       <div className = "App">
         <Navigation></Navigation>
-        
+        <BrowserRouter>
+          <Route path="/Home" component={NewRoute}/>
+        </BrowserRouter>
+
         <h1>Proyectos Grandes</h1>
         <h3>Grandes edificios para grandes empresarios</h3>
         <div className = "conteiner">
@@ -66,6 +80,7 @@ class App extends Component {
           </div>
         </div>
         <CitaForm onAddCita={this.hanldeAddCitas}></CitaForm>
+        
       </div>
     );
   }
