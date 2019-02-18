@@ -32,13 +32,11 @@ class Navigation extends React.Component {
       collapsed: !this.state.collapsed
     });
   }
-
+  
   render() {
     return (
+      
       <div>
-        <BrowserRouter>
-          <Route path = "/" component={Home}/>
-        </BrowserRouter>
         <Navbar color="faded" light>
           <NavbarBrand href="/" className="mr-auto">Bienes Raices Sanchez</NavbarBrand>
             <img alt="Logo" style={{ height: "fill", width: 100, height: 100 }} src={require("./logo.png")} />
