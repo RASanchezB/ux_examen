@@ -1,9 +1,11 @@
-import React from "React";
+import React from 'react';
+import Carusel from './Carousel'
 
 const Home = () => {
     return(
         <div>
-            <p>Hello</p>
+            <Carusel></Carusel>
         </div>
-    )
+    );
 }
+export default Home;

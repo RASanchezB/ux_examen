@@ -15,6 +15,7 @@ import {
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
   } from "mdbreact";
   import Casas from '../Casas';
+  import Home from './Home';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class Navigation extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href="/Home/">Home</NavLink>
               </NavItem>
               
               <NavItem>
