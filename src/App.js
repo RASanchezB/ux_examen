@@ -19,7 +19,7 @@ class App extends Component {
       edificios
     } 
       this.hanldeAddCitas = this.hanldeAddCitas.bind(this);
-      
+      //this.myFunction = this.myFunction.bind(this)
   }
   hanldeAddCitas(cita){
     this.setState({
@@ -27,7 +27,8 @@ class App extends Component {
     })
   }
   myFunction(){
-    alert('Probando')
+    window.scrollTo(0,document.body.scrollHeight);
+    alert('Organizar cita aqui')
   }
 
   render() {
